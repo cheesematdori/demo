@@ -8,6 +8,7 @@ public class TodoService {
 @Autowired
 private TodoRepository repository;
 public String testService(){
+	
 	// Todo Entity 생성
 	TodoEntity entity = TodoEntity.builder().Userid("user01").title("My first todo item").build();
 	// Todo Entity 저장
@@ -17,4 +18,4 @@ public String testService(){
 	repository.findByUserId(entity.getUserid()).get(0);
 	return savedEntity.getUserid();
 	}
-}
+	}
