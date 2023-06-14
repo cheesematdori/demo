@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Entity 
+@Entity
 @Table(name ="Todo")
 public class TodoEntity {
 @Id
